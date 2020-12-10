@@ -115,8 +115,8 @@ void left(int value) {
   if (value > 255) {
     value = 255;
   }
-  move(MOTOR_R, 0, 0);
-  move(MOTOR_L, value, 0);
+  move(MOTOR_L, value, 1);
+  move(MOTOR_R, value, 1);
 }
 
 
@@ -124,8 +124,8 @@ void right(int value) {
   if (value > 255) {
     value = 255;
   }
-  move(MOTOR_L, 0, 0);
-  move(MOTOR_R, value, 1);
+  move(MOTOR_R, value, 0);
+  move(MOTOR_L, value, 0);
 }
 
 
